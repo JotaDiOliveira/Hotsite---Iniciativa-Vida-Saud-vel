@@ -3,12 +3,23 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="~/css/projeto.css" asp-append-version="true"/>    
+    <link rel="stylesheet" href="~/css/site.css">
     <title>@ViewData["Title"] - Hotsite</title>
 </head>
 <body>
     <header>
-        <nav>
-           <h1>Hotsite</h1>
+        <nav class="navbar container-fluid navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow" style="background-color:#E6E8FA">
+                        
+                <h1><a asp-area="" asp-controller="Home" asp-action="Index" ><font color="black">Hotsite</font> </a></h1>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"> </span>
+                </button>      
+           
         </nav>
     </header>
     <div class="container">
@@ -17,12 +28,16 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
+    <footer class="border-top footer text-muted" style="background-color:#E6E8FA">
+        <div class="container-fluid">
             &copy; 2020 - Hotsite
         </div>
     </footer>
 
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/script.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>

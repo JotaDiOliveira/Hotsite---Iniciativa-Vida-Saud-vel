@@ -3,41 +3,219 @@
     ViewData["Title"] = "Hotsite";
 }
 
-<div>
-    <h1>Iniciativa Saúde da Cidade</h1>
-    <p>
-        Texto sobre vida saudável: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
-    </p>
-    <p>
-        Texto sobre vida iniciativa: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
-    </p>
+<div class="container-fluid Principal">
+
+    <div class="Texto-Principal">
+        <h3>Iniciativa Saúde da Cidade</h3>
+        <p class="Texto">
+            Texto sobre vida saudável: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos
+            at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+        </p>
+        <p class="Texto">
+            Texto sobre vida iniciativa: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos
+            at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+        </p>
+    </div>
+
+    <dir class="ImagemPrincipal">
+        <img src="..\imagens\imagenPrincipal.jpg" style="object-fit: cover;" width="600px" height="350px">
+    </dir>
+</div>
+<br>
+
+<div class="container-fluid Secundario">
+
+    <div class="col-md-6">
+
+        <div>
+            <div class="formulario" id="blocoFormulario">
+                <h2>Entre em contato!:</h2>
+                <p class="text">Nos mande uma mensagem e fique por dentro de nossos eventos</p>
+
+                <form method="POST" id="formulario">
+                    <div>
+                        <label asp-for="Nome">Nome:</label>
+                        <input asp-for="Nome" id="nome" type="text" class="Nome" />
+                    </div>
+                    <div>
+                        <label asp-for="Email">Email:</label>
+                        <input asp-for="Email" id="email" type="email" class="Email" />
+                    </div>
+                    <div>
+                        <label asp-for="Mensagem">Mensagem (opcional):</label>
+                        <textarea asp-for="Mensagem" class="Mensagem" id="mensagem" cols="20" rows="2"></textarea>
+                    </div>
+                    <div>
+                        <input class="botao" type="submit" value="Enviar" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="links"><br><br>
+        <div class="agenda">
+
+            <a href="#" class="text-center" data-toggle="modal" data-target="#Agenda"><img
+                    src="..\imagens\imagenAgenda.jpg" alt="Agenda" style="object-fit: cover;" width="120px"
+                    height="150px"> Agenda
+                de   eventos</a>
+        </div>
+
+        <div class="dicas">
+
+            <a href="#" class="text-center" data-toggle="modal" data-target="#Dicas"><img
+                    src="..\imagens\imagenDicas.jpg" alt="Dicas de saúde" style="object-fit: cover;" width="120px"
+                    height="150px"> Dicas de vida   saudável</a>
+        </div>
+
+        <div class="apoiadores">
+
+            <a href="#" class="text-center" data-toggle="modal" data-target="#Apoiadores"><img
+                    src="..\imagens\imagenApoiadores.jpg" alt="Apoiadores" style="object-fit: cover;" width="120px"
+                    height="150px">  Apoiadores</a>
+        </div>
+    </div>
 </div>
 
-<div>
-    <h2>Entre em contato!:</h2>
-    <p>Nos mande uma mensagem e fique por dentro de nossos eventos</p>
+<!-- MODAL Agenda -->
+<div class="modal t-modal fade" id="Agenda" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="mx-auto modal-title">Agenda</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
 
-    <form action="/Home/Cadastrar" method="POST">
-        <div>
-            <label asp-for="Nome">Nome:</label>
-            <input asp-for="Nome" />
+                <h5>10/10/10 10:10 - Evento 1</h5>
+                <p>
+                    Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae
+                </p>
+                <h5>10/10/10 10:10 - Evento 2</h5>
+                <p>
+                    Texto sobre vida iniciativa: Lorem ipsum dolor sit amet et delectus accommodare his consul
+                    copiosae
+                </p>
+                <h5>10/10/10 10:10 - Evento 3</h5>
+                <p>
+                    Texto sobre vida saudável: Lorem ipsum dolor sit amet et delectus accommodare his consul
+                    copiosae
+                </p>
+            </div>
+            <div class="modal-footer">
+                <!--
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    -->
+            </div>
         </div>
-        <div>
-            <label asp-for="Email">Email:</label>
-            <input asp-for="Email" />
-        </div>
-        <div>
-            <label asp-for="Mensagem">Mensagem (opcional):</label>
-            <textarea asp-for="Mensagem"></textarea>
-        </div>
-        <div>
-            <input type="submit" value="Enviar" />
-        </div>
-    </form>
+    </div>
 </div>
 
-<div>
-    <a href="#">Agenda de eventos</a>
-    <a href="#">Dicas de vida saudável</a>
-    <a href="#">Apoiadores</a>
+<!-- MODAL Dicas -->
+
+<div class="modal t-modal fade" id="Dicas" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="mx-auto modal-title">Dicas de vida saudável</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <p>
+                    Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae
+                    legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae
+                    legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae
+                    legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos
+            </div>
+            <div class="modal-footer">
+                <!--
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL Apoiadores -->
+
+<div class="modal t-modal fade" id="Apoiadores" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="mx-auto modal-title">Apoiadores</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="bloco" row>
+                    <div class="imgApoiador" col-4>
+                        <img src="~/imagens/Apoiador01.jpg" alt="Empresa apoiadora" title="Apoiador" width="130px"
+                            height="90px" class="img-fluid" style="object-fit: cover;" />
+                    </div>
+                    <div class="descricao" col-8>
+                        <h5>Empresa 1</h5>
+                        <p>descrição</p>
+                    </div>
+                </div><br>
+                <div class="bloco" row>
+                    <div class="imgApoiador" col-12>
+                        <img src="~/imagens/Apoiador02.jpg" alt="Empresa apoiadora" title="Apoiador" width="130px"
+                            height="90px" class="img-fluid" style="object-fit: cover;" />
+                    </div>
+                    <div class="descricao" col-8>
+                        <h5>Empresa 2</h5>
+                        <p>descrição</p>
+                    </div>
+                </div><br>
+                <div class="bloco" row>
+                    <div class="imgApoiador" col-4>
+                        <img src="~/imagens/Apoiador03.jpg" alt="Empresa apoiadora" title="Apoiador" width="130px"
+                            height="90px" class="img-fluid" style="object-fit: cover;" />
+                    </div>
+                    <div class="descricao" col-8>
+                        <h5>Empresa 3</h5>
+                        <p>descrição</p>
+                    </div>
+                </div><br>
+                <div class="bloco" row>
+                    <div class="imgApoiador" col-4>
+                        <img src="~/imagens/Apoiador04.jpg" alt="Empresa apoiadora" title="Apoiador" width="130px"
+                            height="90px" class="img-fluid" />
+                    </div>
+                    <div class="descricao" col-8>
+                        <h5>Empresa 4</h5>
+                        <p>descrição</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <!--
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    -->
+            </div>
+        </div>
+    </div>
 </div>

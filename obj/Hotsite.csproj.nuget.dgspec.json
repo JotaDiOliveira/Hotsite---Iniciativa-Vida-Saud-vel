@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Pessoal\\Desktop\\Tec Informatica\\UC06\\projetohotsite\\Hotsite.csproj": {}
+    "C:\\Users\\Pessoal\\Desktop\\Tec Informatica\\UC06\\projetohotsite\\Hotsite.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Pessoal\\Desktop\\Tec Informatica\\UC06\\projetohotsite\\Hotsite.csproj": {
+    "C:\\Users\\Pessoal\\Desktop\\Tec Informatica\\UC06\\projetohotsite\\Hotsite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Pessoal\\Desktop\\Tec Informatica\\UC06\\projetohotsite\\Hotsite.csproj",
+        "projectUniqueName": "C:\\Users\\Pessoal\\Desktop\\Tec Informatica\\UC06\\projetohotsite\\Hotsite.csproj",
         "projectName": "Hotsite",
-        "projectPath": "c:\\Users\\Pessoal\\Desktop\\Tec Informatica\\UC06\\projetohotsite\\Hotsite.csproj",
+        "projectPath": "C:\\Users\\Pessoal\\Desktop\\Tec Informatica\\UC06\\projetohotsite\\Hotsite.csproj",
         "packagesPath": "C:\\Users\\Pessoal\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Pessoal\\Desktop\\Tec Informatica\\UC06\\projetohotsite\\obj\\",
+        "outputPath": "C:\\Users\\Pessoal\\Desktop\\Tec Informatica\\UC06\\projetohotsite\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pessoal\\AppData\\Roaming\\NuGet\\NuGet.Config"

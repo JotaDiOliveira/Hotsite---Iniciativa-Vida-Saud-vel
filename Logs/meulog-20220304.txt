@@ -1,0 +1,2 @@
+2022-03-04T23:03:52.1303817-03:00 0HMFU9FADVM95:00000003 [ERR] Falha ao ler arquivo: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseMySql' call. (35e0bc8f)
+2022-03-04T23:11:07.4096228-03:00 0HMFU9FADVM97:00000004 [ERR] Falha ao ler arquivo: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseMySql' call. (35e0bc8f)
